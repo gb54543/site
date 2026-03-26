@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Torneios</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<style>
+body {
+  background: #050507;
+  color: white;
+  font-family: 'Orbitron';
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🏆 Torneios</h1>
+<p>Aqui vão aparecer os campeonatos</p>
+
+<a href="index.html">⬅ Voltar</a>
+
+</body>
+</html>
