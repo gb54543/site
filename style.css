@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background: #050507;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+}
+
+.logo {
+  color: #a855f7;
+  font-weight: bold;
+}
+
+.menu a {
+  margin: 0 15px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #a855f7;
+}
+
+.login {
+  background: #7c3aed;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    radial-gradient(circle at left, rgba(124,58,237,0.3), transparent 40%),
+    radial-gradient(circle at right, rgba(168,85,247,0.3), transparent 40%),
+    #050507;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 80px;
+  color: #a855f7;
+  text-shadow: 0 0 20px #a855f7;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-main {
+  background: #7c3aed;
+}
+
+.btn-sec {
+  border: 1px solid #444;
+}
+
+/* CENTRAL */
+.center {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* CARDS TORNEIOS */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  background: #111;
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.join {
+  background: #7c3aed;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
