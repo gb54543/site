@@ -2,176 +2,126 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Torneio Fortnite</title>
+<title>FN Competitive</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
 body {
   margin: 0;
-  font-family: Arial;
-  background: #0a0a0a;
+  background: #050507;
   color: white;
+  font-family: 'Orbitron', sans-serif;
 }
 
 /* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
-  background: #000;
+  padding: 20px 60px;
   align-items: center;
 }
 
 .logo {
-  color: #ff2d55;
-  font-weight: bold;
-  font-size: 22px;
+  color: #a855f7;
+  font-size: 20px;
 }
 
 .menu a {
-  color: white;
   margin: 0 15px;
   text-decoration: none;
+  color: #aaa;
 }
 
 .menu a:hover {
-  color: #ff2d55;
+  color: #a855f7;
 }
 
-/* BANNER */
-<!-- GOOGLE FONT (igual estilo competitivo) -->
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-<!-- BANNER -->
-<div class="banner">
-  <div class="content">
-    <h1>CREATE YOUR TEAM</h1>
-    <h2>TOURNAMENT</h2>
-
-    <div class="buttons">
-      <div class="btn-main">JOIN TOURNAMENT</div>
-      <div class="btn-sec">CREATE ACCOUNT</div>
-    </div>
-  </div>
-</div>
-
-<style>
-body {
-  margin: 0;
+.login {
+  background: #7c3aed;
+  padding: 8px 15px;
+  border-radius: 8px;
 }
 
-/* BANNER FULL */
-.banner {
-  height: 100vh;
-
-  /* IMAGEM + DEGRADE IGUAL FT */
-  background: 
-    linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(10,10,10,1)),
-    url("https://cdn2.unrealengine.com/fortnite-og-social-1920x1080.jpg") center/cover no-repeat;
-
+/* HERO */
+.hero {
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  /* DEGRADE TOP */
+  background:
+    radial-gradient(circle at left, rgba(124,58,237,0.3), transparent 40%),
+    radial-gradient(circle at right, rgba(168,85,247,0.3), transparent 40%),
+    #050507;
 }
 
-/* CONTEÚDO CENTRAL */
-.content {
-  color: white;
-}
-
-/* TITULO PRINCIPAL */
-.content h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 80px;
-  margin: 0;
+.hero small {
+  color: #a855f7;
   letter-spacing: 3px;
 }
 
-/* TOURNAMENT */
-.content h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 90px;
-  color: #ff2d55;
+/* TITULOS */
+.hero h1 {
+  font-size: 70px;
   margin: 10px 0;
-  letter-spacing: 6px;
+}
+
+.hero h2 {
+  font-size: 80px;
+  color: #a855f7;
+  margin: 0;
+
+  /* GLOW */
+  text-shadow: 0 0 20px #a855f7;
+}
+
+.hero p {
+  color: #888;
+  max-width: 500px;
+  margin: 20px auto;
 }
 
 /* BOTÕES */
 .buttons {
-  margin-top: 30px;
-}
-
-.btn-main {
-  background: #ff2d55;
-  padding: 15px 35px;
-  display: inline-block;
-  margin: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.btn-sec {
-  background: transparent;
-  border: 2px solid white;
-  padding: 15px 35px;
-  display: inline-block;
-  margin: 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-
-
-/* TORNEIOS */
-.section {
-  padding: 40px;
-}
-
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #111;
-  width: 280px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-}
-
-.card-content {
-  padding: 15px;
-}
-
-.join {
-  background: #ff2d55;
-  padding: 10px;
-  text-align: center;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-/* PREMIAÇÃO */
-.prize {
-  background: #111;
-  padding: 20px;
-  border-radius: 10px;
   margin-top: 20px;
 }
 
-/* FOOTER */
-.footer {
-  background: #000;
-  text-align: center;
-  padding: 20px;
+.btn-main {
+  background: #7c3aed;
+  padding: 12px 25px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn-sec {
+  border: 1px solid #444;
+  padding: 12px 25px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
   margin-top: 40px;
+}
+
+.stat h3 {
+  color: #a855f7;
+}
+
+.stat p {
+  color: #777;
+  font-size: 12px;
 }
 
 </style>
@@ -181,69 +131,62 @@ body {
 
 <!-- NAVBAR -->
 <div class="navbar">
-  <div class="logo">🔥 TORNEIO FN</div>
+  <div class="logo">DRAVEX</div>
+
   <div class="menu">
-    <a href="#">Home</a>
+    <a href="#">Início</a>
     <a href="#">Torneios</a>
-    <a href="#">Ranking</a>
-    <a href="#">Login</a>
+    <a href="#">Loja</a>
+    <a href="#">Comunidade</a>
   </div>
+
+  <div class="login">Entrar</div>
 </div>
 
-<!-- BANNER -->
-<div class="banner">
-  <h1>CRIE SEU TIME E VENÇA OS TORNEIOS</h1>
-  <div class="btn">Entrar no Campeonato</div>
-</div>
+<!-- HERO -->
+<div class="hero">
 
-<!-- TORNEIOS -->
-<div class="section">
-  <h2>🏆 Torneios</h2>
+  <div>
+    <small>ORGANIZAÇÃO ESPORTS BRASILEIRA</small>
 
-  <div class="cards">
+    <h1>DOMINE O</h1>
+    <h2>COMPETITIVO</h2>
 
-    <div class="card">
-      <img src="https://cdn2.unrealengine.com/fortnite-chapter4-season2-1920x1080.jpg">
-      <div class="card-content">
-        <h3>Solo Cup</h3>
-        <p>25 jogadores</p>
-        <div class="join">Participar</div>
+    <p>
+      Torneios com premiação real, ranking e comunidade ativa.
+      Entre agora e suba para o topo.
+    </p>
+
+    <div class="buttons">
+      <div class="btn-main">Entrar no Discord</div>
+      <div class="btn-sec">Ver Torneios</div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat">
+        <h3>18.500+</h3>
+        <p>Players</p>
+      </div>
+
+      <div class="stat">
+        <h3>200+</h3>
+        <p>Torneios</p>
+      </div>
+
+      <div class="stat">
+        <h3>R$85.000+</h3>
+        <p>Distribuídos</p>
+      </div>
+
+      <div class="stat">
+        <h3>99%</h3>
+        <p>Aprovação</p>
       </div>
     </div>
 
-    <div class="card">
-      <img src="https://cdn2.unrealengine.com/fortnite-og-1920x1080.jpg">
-      <div class="card-content">
-        <h3>Duos Tryhard</h3>
-        <p>Ranking valendo</p>
-        <div class="join">Participar</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://cdn2.unrealengine.com/fortnite-og-social-1920x1080.jpg">
-      <div class="card-content">
-        <h3>Scrim Elite</h3>
-        <p>Lobby competitivo</p>
-        <div class="join">Participar</div>
-      </div>
-    </div>
-
   </div>
 
-  <!-- PREMIAÇÃO -->
-  <div class="prize">
-    <h2>💰 Premiação</h2>
-    <p>🥇 R$100</p>
-    <p>🥈 R$50</p>
-    <p>🥉 R$25</p>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  © 2026 Servidor Fortnite - Todos direitos reservados
 </div>
 
 </body>
