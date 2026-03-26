@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Comunidade</title>
+<style>
+body {
+  background: #050507;
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<h1>💬 Comunidade</h1>
+<p>Entre no nosso Discord</p>
+
+<a href="https://discord.gg/" target="_blank">Entrar no Discord</a>
+
+</body>
+</html>
